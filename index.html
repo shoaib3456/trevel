@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media.css">
+    <script src="https://kit.fontawesome.com/b690895109.js" crossorigin="anonymous"></script>
+</head>
+<body onscroll="scrolling_func()">
+    <!-- home section -->
+    <section id="home">
+        <div class="bubble"  onmouseout="bubbel_close()">
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#places">Places</a></li>
+                <li><a href="#Discount">Discount</a></li>
+                <li><a href="#join">Join Us</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+        </div>
+
+        <nav>
+            <h1>Travelo</h1>
+        <div class="hamburger" onclick="buuble_popup()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        </nav>
+
+        <img src="images/sky.png" alt="wallpaper" class="sky">
+        <span class="discover">Discover</span>
+        <img src="images/mountain2.png" alt="wallpaper" class="mountain2">
+        <img src="images/mountain1.png" alt="wallpaper"class="mountain1">
+        <img src="images/person.png" alt="wallpaper" class="person">
+        <img src="images/smoke.png" alt="wallpaper" class="smoke">
+    </section>
+
+
+    <!-- places section -->
+    <section id="places">
+       <h2>Top Places To Visit</h2>
+
+       <div class="places-div-container">
+
+       <div class="places_div">
+           <img src="images/newyork.jpg" alt="Newyork">
+           <div class="place-info">
+           <span class="place-name">NEW YORK</span>
+           <button>See More</button>
+           <span class="place-price"> <span> $1200</span></span>
+           </div>
+       </div>
+
+       <div class="places_div">
+           <img src="images/belgium.jpg" alt="belgium">
+           <div class="place-info">
+           <span class="place-name">Belgium</span>
+           <button>See More</button>
+           <span class="place-price"> <span> $2200</span></span>
+           </div>
+       </div>
+
+       <div class="places_div">
+           <img src="images/paris.jpg" alt="paris">
+           <div class="place-info">
+           <span class="place-name">Paris</span>
+           <button>See More</button>
+           <span class="place-price"> <span> $1900</span></span>
+           </div>
+       </div>
+
+       <div class="places_div">
+           <img src="images/china.jpg" alt="china">
+           <div class="place-info">
+           <span class="place-name">China</span>
+           <button>See More</button>
+           <span class="place-price"> <span> $2000</span></span>
+           </div>
+       </div>
+
+       <div class="places_div">
+           <img src="images/london.jpg" alt="london">
+           <div class="place-info">
+           <span class="place-name">London</span>
+           <button>See More</button>
+           <span class="place-price"> <span> $2500</span></span>
+           </div>
+       </div>
+
+       <div class="places_div">
+           <img src="images/thailand.jpg" alt="Thailand">
+           <div class="place-info">
+           <span class="place-name">Thailand</span>
+           <button>See More</button>
+           <span class="place-price"> <span> $3200</span></span>
+           </div>
+       </div>
+
+    </div>
+
+    </section>
+
+    <section id="Discount">
+      <img src="images/hiking.jpg" alt="Discount offer">
+    
+      <div class="discount-info">
+      <h2>Discount</h2>
+      <p>Up TO 90% OFF</p><br>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum est assumenda nulla veritatis soluta, maiores aliquam inventore necessitatibus! Ratione, ipsam.</p>
+      <button>SEE PACKAGES</button>
+    </div>
+    </section>
+
+    <section id="join">
+        <img src="images/travel-svg.svg" alt="travel-svg" class="travel-image">
+        <div class="join-form">
+            <h3>Join us</h3>
+            <form action="bakend.php">
+                <input type="text" placeholder="Email adress">
+                <input type="password" placeholder="Password">
+                <input type="submit" value="Submit" >
+            </form>
+        </div>
+    </section>
+</body>
+<section id="contact">
+    <ul>
+        <li>Contacts</li>
+        <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a></li>
+        <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+        <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        <li><a href=""><i class="fa fa-google" aria-hidden="true"></i> Google</a></li>
+    </ul>
+    <ul>
+        <li>About Us</li>
+        <li><a href="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi autem laudantium soluta! Unde,</a></li>
+    </ul>
+    <ul>
+        <li>Our Speacialty</li>
+        <li><a href=""> Modi autem laudantium soluta! Unde,Lorem ipsum dolor sit amet consectetur,</a></li>
+    </ul>
+</section>
+<div id="footer">
+    Copyright &copy; Reserved 2020 (Website Created By ♥ Shoaib Siddiqui)
+</div>
+<script src="app.js"></script>
+
+</html>
