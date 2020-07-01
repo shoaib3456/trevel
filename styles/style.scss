@@ -1,0 +1,390 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+::-webkit-scrollbar{
+    -webkit-appearance: none;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.548);
+    border-radius: 200px;
+}
+$transparancy:0;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+html{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+// Home Section
+#home{
+    width: 100%;
+    position: relative;
+    height: 65vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    img{
+        position: absolute;
+       width: 100%;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0);
+        opacity:$transparancy;
+        top: 0;
+        left: 0;
+
+    }
+}
+// Navigation bar
+nav{
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1{
+        font-family: 'Sriracha', cursive;
+       letter-spacing: 2px;
+       font-size: 1.75rem;
+       color: white;
+       text-transform: uppercase;
+    }
+}
+.hamburger{
+    width: 30px;
+    height: 30px;
+    padding: 15px;
+    padding-right: 30px;
+    cursor: pointer;
+        .bar1{
+            width: 25px;
+            height: 3px ;
+            background-color: white;
+            position: relative;
+            transform: translateY(-7px) ;
+            transition: .5s;
+        }
+        .bar2{
+            width: 20px;
+            height: 3px ;
+            background-color: white;
+            position: relative;
+            transition: .5s;
+        }
+        .bar3{
+            width: 25px;
+            height: 3px ;
+            background-color: white;
+            position: relative;
+            transform: translateY(7px);
+            transition: .5s;
+        }
+    }
+    
+// buuble
+
+.bubble{
+    width: 107%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.548);
+    position: absolute;
+    top: -44px;
+    right:-44px ;
+    z-index: 3;
+    transition: 1.5s ease-out;
+    filter: blur(0);
+    display: flex;
+    justify-content: flex-start;
+    clip-path: circle(0% at 100% 0%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul{
+        z-index: 5;
+        opacity: 1;
+        transition: .7s ease-in-out;
+        transition-delay: 1s;
+        transform: translateX(30%);
+        li{
+            list-style-type: none;
+            a{
+                text-decoration: none;
+                color: white;
+                font-family: 'Nunito',cursive;
+                font-size: 2rem;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                transition: 1s;
+                padding-left: 10px;
+                &:hover{
+                    color: rgb(167, 167, 167);
+                    border-left: 1px solid white;
+                }
+            }
+        }
+}
+}
+.discover{
+    position: absolute;
+    font-size: 13vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    top: 20%;
+    left: 0;
+    text-shadow: 0 0 10px rgb(199, 199, 199);
+}
+
+// places section
+
+#places{
+      width: 100%;
+      padding: 20px;
+      h2{
+        font-family: 'Nunito',cursive;
+        width: 100%;
+        text-align: center;
+        padding: 10px 10px ;
+        font-size: 2rem;
+        color: rgb(129, 129, 129);
+      }
+}
+.places-div-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.places_div{
+     width: 300px;
+     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.096);
+     overflow: hidden;
+     margin: 20px 10px;
+     transition: .25s;
+     &:hover{
+     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.568);
+     }
+     img{
+         width: 100%;
+         height: auto;
+         min-height: 250px;
+         max-height: 250px;
+     }
+     .place-info{
+         width: 100%;
+         height:110px;
+         padding: 0 5px;
+         display: flex;
+         flex-direction: column;
+         position: relative;
+     }
+     button{
+         background-color: #3498db;
+         border: none;
+         width: 100px;
+         color: white;
+         padding: 7px 10px;
+         border-radius: 4px;
+         cursor: pointer;
+         &:hover{
+             background-color: #2377af;
+         }
+     }
+}
+.place-name{
+    font-family:'Ubuntu',cursive ;
+    font-size: 1.25rem;
+    padding: 5px 0px;
+}
+.place-price {
+    background-color: #f1c40f;
+    color: white;
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    bottom: -45%;
+    left: -21%;
+    -webkit-transform: rotate(10deg);
+    transform: rotate(21deg);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.205);
+    span{
+        transform: rotate(-21deg);
+        position: absolute;
+        // bottom: 0;
+        left: 59px;
+        top: 8px;
+        font-family: 'Ubuntu',cursive;
+    }
+}
+
+// Discount section
+#Discount{
+    width: 100%;
+    margin: 40px 0px;
+    position: relative;
+    img{
+        width: 100%;
+    }
+    &:after{
+        content: "";
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.315);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+}
+.discount-info{
+    position: absolute;
+    top: 20%;
+    left: 58px;
+    font-family:'Nunito' ,cursive;
+    font-weight: 600;
+    color: white;
+    z-index: 2;
+    h2{
+        font-size:3rem ;
+    }
+    p{
+        font-size:1.5rem ;
+        &:nth-child(4){
+            font-size: 1rem;
+            width: 400px;
+        }
+    }
+    button{
+        font-size: 1rem;
+        padding: 10px 20px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        margin: 20px 0px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: .5s;
+        &:hover{
+            color:black;
+            background-color: white;
+        }
+    }
+}
+
+// Join us section
+
+#join{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.travel-image{
+    width:400px ;
+    height: 70vh;
+    padding: 50px 0;
+}
+.join-form{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu',cursive;
+    color: rgb(108,99,255);
+    font-size: 2rem;
+    padding: 7rem 0;
+    border: 2px solid rgb(108,99,255);
+    border-radius: 20px ;
+    margin: 4rem 1rem;
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        input{
+            width: 300px;
+            font-size: 1rem;
+            padding: 10px 10px;
+            margin: 10px 0;
+        }
+        input[type=text],
+        input[type=password]{
+            border: 2px solid rgb(108,99,255);
+            border-radius: 300px;
+            &::placeholder{
+                font-size: 1rem;
+                color: rgba(107, 99, 255, 0.589);
+            }
+        }
+
+        input[type=submit]{
+            font-size:1.15rem;
+            width: 100px;
+            margin: 15px 0;
+            border: 2px solid rgb(108,99,255);
+            border-radius: 300px;
+            background-color: rgb(108,99,255);
+            color: rgb(255, 255, 255);
+            padding: 6px 2px;
+            cursor: pointer;
+            transition: .5s;
+            &:hover{
+                color: rgb(108,99,255);
+                background-color: rgb(255, 255, 255);
+            }
+        }
+    }
+}
+
+
+
+// footer section
+#contact{
+    width: 100%;
+    background-color: rgb(108,99,255);
+    padding: 40px;
+    font-family: 'Ubuntu',cursive;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    ul{
+        margin: 20px 0;
+        li{
+            color: white;
+            list-style-type: none;
+            font-size: 2rem;
+            width: 300px;
+            a{
+                color: white;
+                text-decoration: none;
+                font-size: 1.25rem;
+            }
+        }
+    }
+}
+
+
+#footer{
+    width: 100%;
+    height: 40px;
+    color: rgb(108,99,255);
+     font-family: 'Ubuntu',cursive;
+     font-size: 1.15rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 10px;
+    //  word-break: break-all;
+}

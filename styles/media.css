@@ -1,0 +1,66 @@
+@media screen and (max-width: 650px) {
+  .bubble {
+    width: 120%;
+  }
+  .bubble ul {
+    margin-top: 20%;
+  }
+  .bubble ul li a {
+    font-size: 1.5rem;
+  }
+  .discount-info {
+    top: 10%;
+  }
+  .discount-info h2 {
+    font-size: 2rem;
+  }
+  .discount-info p {
+    font-size: 1rem;
+  }
+  .discount-info p:nth-child(4) {
+    font-size: .75rem;
+  }
+  .discount-info button {
+    font-size: .5rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .bubble {
+    width: 130%;
+  }
+  #Discount img {
+    height: 300px;
+  }
+  .discount-info {
+    top: 10%;
+    left: 20px;
+  }
+  .discount-info p:nth-child(4) {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .bubble {
+    height: 120%;
+  }
+  .travel-image {
+    width: 300px;
+    height: 60vh;
+    padding: 50px 0;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  nav {
+    padding: 4px 40px;
+  }
+  .join-form form input {
+    width: 200px;
+  }
+  #contact ul li a {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=media.css.map */
